@@ -18,7 +18,7 @@ contract NFT is ERC721URIStorage{
     }
     function mintToken(string memory tokenURI) public returns(uint){
         _tokenIds.increment();
-        uint252 newItemId = _tokenIds.current();
+        uint256 newItemId = _tokenIds.current();
         _mint(msg.sender, newItemId);
         _setTokenURI(newItemId, tokenURI);
         setApprovalForAll(contractAddress, true);
