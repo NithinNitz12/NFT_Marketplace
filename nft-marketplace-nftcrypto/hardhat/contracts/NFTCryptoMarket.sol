@@ -45,7 +45,7 @@ contract NFTCryptoMarket is ReentrancyGuard{
         return listingPrice;
     }
 
-    function mintMarketItem(
+    function makeMarketItem(
         address nftContract,
         uint tokenId,
         uint price
