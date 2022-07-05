@@ -16,7 +16,7 @@ describe("NFTCryptoMarket", function () {
     const nftContractAddress = nft.address
 
     //test to receive listing price and auction price
-    let listing = await market.getListingPrice()
+    let listingPrice = await market.getListingPrice()
     listingPrice = listingPrice.toString()
 
     const auctionPrice = ethers.utils.parseUnits('100','ether')
