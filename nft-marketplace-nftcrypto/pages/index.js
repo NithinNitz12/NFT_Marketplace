@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      NFTCrypto MARKETPLACE
+      {/* NFTCrypto MARKETPLACE */}
     </div>
   )
 }
