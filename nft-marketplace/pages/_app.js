@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import Link from 'next/link'
+import './App.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,6 +26,11 @@ function MyApp({ Component, pageProps }) {
           <Link href="/creator-dashboard">
             <a className="mr-6 text-pink-500">
               Creator Dashboard
+            </a>
+          </Link>
+          <Link href="http://localhost:3000/">
+            <a className="mr-6 text-blue-500">
+              Mint on Solana network
             </a>
           </Link>
         </div>
