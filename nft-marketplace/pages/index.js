@@ -19,7 +19,7 @@ export default function Home() {
   }, [])
 
   async function loadNFTs() {    
-    const provider = new ethers.providers.JsonRpcProvider()
+    const provider = new ethers.providers.JsonRpcProvider("https://polygon-mumbai.infura.io/v3/9713cba385f14dc58656ac8f3ab4a667")
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
     const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, provider)
     const data = await marketContract.fetchMarketItems()
